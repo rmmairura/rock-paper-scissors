@@ -1,0 +1,28 @@
+# ROCK PAPER SCISSORS GAME
+import random
+while True:
+    d=input("Enter rock, paper,scissors, or q/Q to quit:").lower()
+    My_list = ['rock', 'paper',' scissors']
+    y = random.choice(['rock','paper', 'scissors',])
+    print(y)
+    if d =='q':
+        print("Thank you for playing")
+        exit()
+    elif d == "rock" and y == 'rock':
+        print("you have tied")
+    elif d == "rock" and y == 'paper':
+     print("The computer wins!")
+    elif d == "rock" and y == 'scissors':
+        print("The computer wins!")
+    elif d == " paper" and y == 'rock':
+         print("You win")
+    elif d == "paper" and y == 'paper':
+        print( "you have tied")
+    elif d == "paper" and y == 'scissors':
+        print("The computer wins")
+    elif d == "scissors" and y == 'scissors':
+        print("you have tied")
+    elif d == " scissors" and y == 'rock':
+        print("The computer wins")
+    else:
+        print("You win")
